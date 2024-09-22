@@ -3,7 +3,7 @@ import unzipper from "unzipper";
 
 const downloadsFolder = process.env.USERPROFILE + "/Downloads";
 const existingFiles = fs.readdirSync(downloadsFolder);
-const destinationBase = "";
+const destinationBase = ""; // Directory path goes here
 
 fs.watchFile(downloadsFolder, {interval: 500}, () => {
     const files = fs.readdirSync(downloadsFolder);
